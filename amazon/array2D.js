@@ -16,4 +16,4 @@ const minChange = (n, k) => {
   return result;
 };
 
-console.log(minChange(3, 2));
+console.log(minChange(4, 3));

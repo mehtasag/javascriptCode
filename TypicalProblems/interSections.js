@@ -1,4 +1,3 @@
-
 // Code to find common arrays
 const interSections = (a, b) => {
   const result = [];
@@ -9,7 +8,9 @@ const interSections = (a, b) => {
 
   for (let ele of b) {
     if (items.has(ele.id)) {
-      result.push(ele);
+      result.push({ ...ele, folliwing: true });
+    } else {
+      result.push({ ...ele, following: false });
     }
   }
   return result;
